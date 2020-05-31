@@ -3,6 +3,8 @@ var playerSelection, botSelection, wins, losses, result, playing, playerName;
 playerName = window.prompt('Enter your name please: ')
 document.querySelector('.player').textContent = playerName;
 
+window.alert('Zoom out the screen for better experience! OR use desktop site option of chrome!');
+
 const arenaText = document.querySelector('.arena-text');
 const arena = document.querySelector('.arena');
 const playerImage = document.querySelector('.player-selection');
