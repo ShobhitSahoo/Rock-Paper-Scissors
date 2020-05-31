@@ -87,7 +87,7 @@ function resetGame(auto) {
     botScore.classList.remove('.game-over');
     arenaText.classList.remove('.arena-active');
     arenaText.classList.add('.arena-text');
-    arenaText.textContent = 'Make a move to being!!!';
+    arenaText.textContent = 'Make a move to begin!!!';
     playerScore.textContent = wins;
     botScore.textContent = losses;
     updateImage('Waiting', 'Waiting');
