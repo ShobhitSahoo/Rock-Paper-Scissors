@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Styles.css" rel="stylesheet" type="text/css">
+    <title> Rock | Paper | Scissors </title>
+</head>
+
+<body>
+    <div>
+        <h1 class="header" id="title">ROCK | PAPER | SCISSOR</h1>
+        <h3 class="header" id="subtitle">Can You beat my BOT?</h3>
+    </div>
+    <center>
+        <main class="main">
+            <div class="player-stats">
+                <p class="player">Player</p>
+                <div class="player-score">0</div>
+                <img src="images/Waiting.png" class="player-selection">
+            </div>
+
+            <div class="arena">
+                <p class="arena-text">Make a move to begin!!</p>
+            </div>
+
+            <div class="bot-stats">
+                <p class="bot">Bot</p>
+                <div class="bot-score">0</div>
+                <img src="images/Waiting.png" class="bot-selection">
+            </div>
+        </main>
+
+        <div class="images">
+            <img class="image ROCK" src="images/ROCK.png" alt="rocks">
+            <img class="image PAPER" src="images/PAPER.png" alt="papers">
+            <img class="image SCISSORS" src="images/SCISSORS.png" alt="scissors">
+        </div>
+        <br>
+        <div class="btns">
+            <div class="btn btn-ROCK">ROCK</div>
+            <div class="btn btn-PAPER">PAPER</div>
+            <div class="btn btn-SCISSORS">SCISSORS</div>
+        </div>
+        <br>
+        <center>
+            <div class="restart">New Game</div>
+        </center>
+
+    </center>
+
+    <script src="Scripts.js"></script>
+</body>
+
+</html>

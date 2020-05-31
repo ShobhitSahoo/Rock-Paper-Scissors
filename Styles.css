@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box
+}
+
+body {
+    background-image: url(images/background.png);
+    padding-top: 15px;
+}
+
+.header {
+    text-align: center;
+}
+
+#title {
+    color: orangered;
+    font-weight: bolder;
+}
+
+#subtitle {
+    color: firebrick;
+    font-weight: 200;
+}
+
+.main {
+    justify-content: center;
+    width: 1000px;
+}
+
+.player-stats,
+.bot-stats,
+.arena,
+.main,
+.btns,
+.images {
+    display: flex;
+}
+
+.player-stats,
+.bot-stats,
+.arena {
+    flex-direction: column;
+}
+
+.player-stats,
+.bot-stats {
+    align-items: center;
+    widows: 175px;
+    justify-content: space-between;
+}
+
+.main,
+.images,
+.btns,
+.restart {
+    margin: 0 auto;
+}
+
+.main,
+.arena {
+    height: 300px;
+}
+
+.player,
+.bot {
+    color: blueviolet;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+.player-score,
+.bot-score {
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    border-width: 3px;
+    border-radius: 10px;
+    font-size: 2.7rem;
+    color: white;
+    background-color: grey;
+}
+
+.player-selection,
+.bot-selection {
+    height: 150px;
+    width: 150px;
+}
+
+.arena {
+    justify-content: center;
+    width: 650px;
+    border-width: thin;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: darkslategray;
+    background-color: lightgray;
+}
+
+.arena-text {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+.arena-active {
+    margin: 0;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 500;
+    color: darkslategray;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+}
+
+.images,
+.btns {
+    width: 800px;
+    justify-content: space-around;
+}
+
+.btns {
+    margin-top: 5px;
+}
+
+.btn {
+    text-align: center;
+    background-color: azure;
+    height: 30px;
+    width: 125px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.btn::selection,
+.restart::selection {
+    color: none;
+    background-color: none;
+}
+
+.btn:hover {
+    border-style: solid;
+    border-color: black;
+    color: deeppink;
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.restart {
+    background-color: cyan;
+    width: 150px;
+    height: 30px;
+    border-style: dotted;
+    border-width: 2px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 30px;
+}
+
+.restart:hover {
+    border-style: solid;
+    border-color: beige;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.image,
+.player-selection,
+.bot-selection {
+    transition: transform 0.25s ease;
+}
+
+.rotate {
+    transform: rotate(360deg);
+    transition: transform 0.25s ease;
+}
+
+.game-over {
+    animation: bgColor 3.5s infinite linear;
+    color: bisque;
+}
